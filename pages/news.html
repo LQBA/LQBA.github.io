@@ -1,0 +1,14 @@
+---
+title: News
+permalink: /news/
+---
+<ul class="list-unstyled">
+  {% for post in site.posts %}
+  <li class="mb-3">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <small class="text-muted d-block">{{ post.date | date: "%B %-d, %Y" }}</small>
+  </li>
+  {% else %}
+  <li>No news yet.</li>
+  {% endfor %}
+</ul>
