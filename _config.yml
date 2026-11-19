@@ -1,0 +1,17 @@
+title: Louisiana Quiz Bowl Association
+description: Placeholder description of the Louisiana Quiz Bowl Association.
+url: "https://lqba.github.io"
+baseurl: ""
+logo: /assets/images/lqba-header.png
+contact_email: info@example.com
+
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude: [Gemfile, Gemfile.lock, README.md, vendor]
